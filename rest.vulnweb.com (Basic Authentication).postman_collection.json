@@ -1,0 +1,1511 @@
+{
+	"info": {
+		"_postman_id": "53fae7c1-3e83-4dc8-89ef-acea47a24ed5",
+		"name": "rest.vulnweb.com (Basic Authentication)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get all users JSON",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "rest.vulnweb.com",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/users",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all users XML",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml"
+							}
+						],
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/users",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add new user JSON",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"test_username\",\r\n  \"email\": \"test_user@example.com\",\r\n  \"password\": \"123456\",\r\n  \"first_name\": \"test\",\r\n  \"last_name\": \"user\"\r\n}"
+						},
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/users",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add new user XML",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Content-type",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\r\n<user>\r\n  <username>test_username</username>\r\n  <email>test_user@example.com</email>\r\n  <password>123456</password>\r\n  <first_name>test</first_name>\r\n  <last_name>user</last_name>\r\n</user>"
+						},
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/users",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user JSON",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/users/:username",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"users",
+								":username"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "test_username' and sleep(10) -- "
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user XML",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/users/:username",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"users",
+								":username"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "test_username"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user posts JSON",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/users/:username/posts",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"users",
+								":username",
+								"posts"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "ena07"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user posts XML",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/users/:username/posts",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"users",
+								":username",
+								"posts"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "ena07"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit user JSON",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"test_username22\",\r\n  \"email\": \"test_user@example22.com\",\r\n  \"password\": \"123456\",\r\n  \"first_name\": \"test22\",\r\n  \"last_name\": \"user22\"\r\n}"
+						},
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/users/:username",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"users",
+								":username"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "test_username"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit user XML",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Content-type",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\r\n<user>\r\n  <username>test_username22</username>\r\n  <email>test_user@example22.com</email>\r\n  <password>123456</password>\r\n  <first_name>test22</first_name>\r\n  <last_name>user22</last_name>\r\n</user>"
+						},
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/users/:username",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"users",
+								":username"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "test_username"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user JSON",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/users/:username?callback=test",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"users",
+								":username"
+							],
+							"query": [
+								{
+									"key": "callback",
+									"value": "test"
+								}
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "test_username"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user XML",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/users/:username?callback=test",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"users",
+								":username"
+							],
+							"query": [
+								{
+									"key": "callback",
+									"value": "test"
+								}
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "test_username"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post",
+			"item": [
+				{
+					"name": "Get all posts JSON",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/posts",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all posts XML",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml"
+							}
+						],
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/posts",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add new post JSON",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user_id\": \"21\",\r\n  \"title\": \"test post title\",\r\n  \"content\": \"test content\"\r\n}"
+						},
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/posts",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add new post XML",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Content-type",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\r\n<post>\r\n  <user_id>21</user_id>\r\n  <title>test post title</title>\r\n  <content>test content</content>\r\n</post>"
+						},
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/posts",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get post JSON",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/posts/:postId",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"posts",
+								":postId"
+							],
+							"variable": [
+								{
+									"key": "postId",
+									"value": "21"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get post XML",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml"
+							}
+						],
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/posts/:postId",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"posts",
+								":postId"
+							],
+							"variable": [
+								{
+									"key": "postId",
+									"value": "21"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get post comments JSON",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/posts/:postId/comments",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"posts",
+								":postId",
+								"comments"
+							],
+							"variable": [
+								{
+									"key": "postId",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get post comments XML",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml"
+							}
+						],
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/posts/:postId/comments",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"posts",
+								":postId",
+								"comments"
+							],
+							"variable": [
+								{
+									"key": "postId",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit post JSON",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user_id\": \"34\",\r\n  \"title\": \"test post title22\",\r\n  \"content\": \"test content22\"\r\n}"
+						},
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/posts/:postId",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"posts",
+								":postId"
+							],
+							"variable": [
+								{
+									"key": "postId",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit post XML",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Content-type",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\r\n<post>\r\n  <user_id>34</user_id>\r\n  <title>test post title22</title>\r\n  <content>test content22</content>\r\n</post>"
+						},
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/posts/:postId",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"posts",
+								":postId"
+							],
+							"variable": [
+								{
+									"key": "postId",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete post JSON",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/posts/:postId?callback=test",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"posts",
+								":postId"
+							],
+							"query": [
+								{
+									"key": "callback",
+									"value": "test"
+								}
+							],
+							"variable": [
+								{
+									"key": "postId",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete post XML",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml"
+							}
+						],
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/posts/:postId?callback=test",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"posts",
+								":postId"
+							],
+							"query": [
+								{
+									"key": "callback",
+									"value": "test"
+								}
+							],
+							"variable": [
+								{
+									"key": "postId",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comment",
+			"item": [
+				{
+					"name": "Get all comments JSON",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/comments",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all comments XML",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml"
+							}
+						],
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/comments",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add new comment JSON",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user_id\": \"21\",\r\n  \"post_id\": \"5\",\r\n  \"comment\": \"test comment\"\r\n}"
+						},
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/comments",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add new comment XML",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Content-type",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\r\n<post>\r\n  <user_id>21</user_id>\r\n  <post_id>5</post_id>\r\n  <comment>test comment</comment>\r\n</post>"
+						},
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/comments",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get comment JSON",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/comments/:commentId",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"comments",
+								":commentId"
+							],
+							"variable": [
+								{
+									"key": "commentId",
+									"value": "101"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get comment XML",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml"
+							}
+						],
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/comments/:commentId",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"comments",
+								":commentId"
+							],
+							"variable": [
+								{
+									"key": "commentId",
+									"value": "101"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit comment JSON",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user_id\": \"21\",\r\n  \"post_id\": \"34\",\r\n  \"comment\": \"test comment11\"\r\n}"
+						},
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/comments/:commentId",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"comments",
+								":commentId"
+							],
+							"variable": [
+								{
+									"key": "commentId",
+									"value": "101"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit comment XML",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Content-type",
+								"type": "text",
+								"value": "application/xml"
+							},
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\r\n<post>\r\n  <user_id>21</user_id>\r\n  <post_id>34</post_id>\r\n  <comment>test comment11</comment>\r\n</post>"
+						},
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/comments/:commentId",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"comments",
+								":commentId"
+							],
+							"variable": [
+								{
+									"key": "commentId",
+									"value": "101"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete comment JSON",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/comments/:commentId?callback=test",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"comments",
+								":commentId"
+							],
+							"query": [
+								{
+									"key": "callback",
+									"value": "test"
+								}
+							],
+							"variable": [
+								{
+									"key": "commentId",
+									"value": "101"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete comment XML",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Host",
+								"type": "text",
+								"value": "rest.vulnweb.com"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/xml"
+							}
+						],
+						"url": {
+							"raw": "http://rest.vulnweb.com/basic_authentication/api/comments/:commentId?callback=test",
+							"protocol": "http",
+							"host": [
+								"rest",
+								"vulnweb",
+								"com"
+							],
+							"path": [
+								"basic_authentication",
+								"api",
+								"comments",
+								":commentId"
+							],
+							"query": [
+								{
+									"key": "callback",
+									"value": "test"
+								}
+							],
+							"variable": [
+								{
+									"key": "commentId",
+									"value": "101"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Test root path",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "rest.vulnweb.com",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://rest.vulnweb.com/basic_authentication/api/",
+					"protocol": "http",
+					"host": [
+						"rest",
+						"vulnweb",
+						"com"
+					],
+					"path": [
+						"basic_authentication",
+						"api",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "123456",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "admin",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
